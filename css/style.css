@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+--dark-color:#D3D3D3;
+--bs-primary: #0d1c48;	
+}
+
+.navbar-nav .nav-link{
+    color:#0d1c48;
+}
+.navbar .navbar-nav .nav-link.active,.navbar .navbar-nav .nav-link:focus,.navbar .navbar-nav .nav-link:hover {
+font-weight: bold;
+color: var(--bs-primary);
+/* background-color: #e9c8a8; */
+}
+
+.navbar .search svg{
+    color: var(--bs-primary);
+}
+.navbar .navbar-toggler{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="false"]{
+   border-color:  #eb9845;
+}
+.dropdown-menu .dropdown-item:hover{
+    background-color: #eb9845;
+}
+.fixed-image1{
+    background-image: url(../images/Sunrise-Montenare.jpg);
+}
+.fixed-img{
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+}
+.fixed-image2{
+   background-image: url(../images/sarm-el-seyh-shaba-cami.jpg) 
+}
+.carousel-item a:hover{
+background-color: #eb9845;
+
+color: #0d1c48;
+font-size: 25;
+color:#0d1c48;
+} 
+.card{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.overlay{
+position: absolute;
+top: 0;
+height: 100%;
+width: 0;
+transform: skewX(12deg);
+background-color: rgba(0, 31, 91, 0.4);
+margin-left:-20.5%;
+visibility: hidden;
+transition: width .5s ease;
+}
+
+.card:hover .overlay{
+    visibility: visible;
+    width: 70%;
+    height: 100%;
+}
+
+.col .card-g .card-body{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    width: 50%;
+    font-size: 20px;
+    color: #fff;
+    visibility: hidden;
+    transition-delay: 1s;
+    transition: width .5s ease;
+}
+
+.card:hover .btn{
+  visibility: visible;
+}
+
+.card .btn:hover{
+    background-color: transparent;
+  color: white;
+}
+.cards .ww{
+visibility: visible;
+}
+.card-be{
+    position: relative;
+    cursor: pointer;
+}
+.card-img-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.5);
+    z-index: 2;
+}
+.card-be .card-body{
+    position: absolute;
+    z-index: 4;
+    visibility: visible;
+}
+.card-be:hover .card-body{
+transform: scale(.9);
+transition: .5s;
+}
+.card-be:hover{
+    transform: scale(.9);
+}
+
+
+body {
+	/* font-family: "Baloo 2", cursive; */
+	font-size: 16px;
+	color: #ffffff;
+	text-rendering: optimizeLegibility;
+	font-weight: initial;
+}
+
+.postcard {
+    height: 390px;
+    flex-wrap: wrap;
+    display: flex;
+      box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+        border-radius: 10px;
+        margin: 0 0 2rem 0;
+        overflow: hidden;
+        position: relative;
+        color: #ffffff;
+        box-shadow: -5px 5px 20px 10px rgb(219, 189, 152);
+        overflow: hidden;
+      }
+
+      .postcard.dark {
+        background-color: #18151f;
+      }
+
+    
+
+      .postcard .t-dark {
+        color: #18151f;
+      }
+      .postcard a {
+        color: inherit;
+      }
+      .postcard h3{
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+      .postcard .small {
+        font-size: 80%;
+      }
+      .postcard .postcard__title a{
+     font-size: 1.75rem;
+      }
+      .postcard .postcard__img {
+        max-height: 180px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+      }
+      .postcard .postcard__img_link {
+        display: contents;
+      }
+      
+      .postcard .postcard__bar {
+        width: 50px;
+        height: 10px;
+        margin: 10px 0;
+        border-radius: 5px;
+        background-color: rgb(85, 83, 83);
+        transition: width 0.2s ease;
+      }
+
+      .postcard .postcard__text {
+        padding: 1.5rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      .postcard .postcard__preview-txt {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: justify;
+        height: 100%;
+      }
+      .postcard .postcard__tagbox {
+        /* display: flex; */
+        flex-flow: row wrap;
+        font-size: 14px;
+        margin: 20px 0 0 0;
+        padding: 0;
+        justify-content: center;
+      }
+      .postcard .postcard__tagbox .tag__item {
+        display: inline-block;
+        background: rgba(133, 131, 131, 0.4);
+        border-radius: 3px;
+        padding: 2.5px 10px;
+        margin: 0 5px 5px 0;
+        cursor: default;
+        -webkit-user-select: none;
+        user-select: none;
+        transition: background-color 0.5s;
+      }
+      .postcard .postcard__tagbox .tag__item:hover {
+        background: #eb9845;
+        color:white;
+      }
+      .postcard:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        /* background-image: linear-gradient(-70deg, #424242, transparent 50%); */
+        opacity: 1;
+        border-radius: 10px;
+      }
+      .postcard:hover .postcard__bar {
+        width: 100px;
+      }
+      
+      @media screen and (min-width: 769px) {
+        .postcard {
+          flex-wrap: inherit;
+        }
+        .postcard .postcard__title {
+          font-size: 2rem;
+        }
+        .postcard .postcard__tagbox {
+          justify-content: start;
+        }
+        .postcard .postcard__img {
+          max-width: 300px;
+          max-height: 100%;
+          transition: transform 0.3s ease;
+        }
+        .postcard .postcard__text {
+          padding: 3rem;
+          width: 100%;
+        }
+        .postcard .media.postcard__text:before {
+          content: "";
+          position: absolute;
+          display: block;
+          background: #18151f;
+          top: -20%;
+          height: 130%;
+          width: 55px;
+        }
+        .postcard:hover .postcard__img {
+          transform: scale(1.1);
+        }
+        .postcard:nth-child(2n+1) {
+          flex-direction: row;
+        }
+        .postcard:nth-child(2n+0) {
+          flex-direction: row-reverse;
+        }
+        .postcard:nth-child(2n+1) .postcard__text::before {
+          left: -12px !important;
+          transform: rotate(4deg);
+        }
+        .postcard:nth-child(2n+0) .postcard__text::before {
+          right: -12px !important;
+          transform: rotate(-4deg);
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .postcard__text {
+          padding: 2rem 3.5rem;
+        }
+      
+        .postcard__text:before {
+          content: "";
+          position: absolute;
+          display: block;
+          top: -20%;
+          height: 130%;
+          width: 55px;
+        }
+      
+        .postcard.light .postcard__text:before {
+          background: white;
+        }
+      }
+   
+      .postcard .postcard__tagbox .green.play:hover {
+        background: rgb(60, 99, 17);
+      }
+      
+      .green .postcard__title:hover {
+        color:  rgb(60, 99, 17);
+      }
+      
+      .green .postcard__bar {
+        background-color:  rgb(60, 99, 17);
+      }
+    
+      .postcard .postcard__tagbox .blue.play:hover {
+        background: #0076bd;
+      }
+      
+      .blue .postcard__title:hover {
+        color: #0076bd;
+      }
+      
+      .blue .postcard__bar {
+        background-color: #0076bd;
+      }
+      
+      .postcard .postcard__tagbox .red.play:hover {
+        background: #bd150b;
+      }
+      
+      .red .postcard__title:hover {
+        color: #bd150b;
+      }
+      
+      .red .postcard__bar {
+        background-color: #bd150b;
+      }
+      
+      .postcard .postcard__tagbox .yellow.play:hover {
+        background: #bdbb49;
+        color: black;
+      }
+      
+      .yellow .postcard__title:hover {
+        color: #bdbb49;
+      }
+      
+      .yellow .postcard__bar {
+        background-color: #bdbb49;
+      }
+      
+     .title{
+      background: -webkit-linear-gradient(90deg,#de9000,#00a2ff);
+      font-size: 22px;
+      font-weight: bolder;
+      /* text-transform: uppercase; */
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: 0.4s;
+     } 
+     .logoicon {
+      height: 100px;
+      width: 100px;
+      box-shadow: -3px -3px 20px 10px rgb(233, 205, 171);
+      border-radius: 50%;
+      transition: 1s;
+  }
+  .logoicon:hover{
+    background-color: #d4b386;
+    opacity: 0.6;
+    
+}
+.aside-icon a {
+  display: inline-block;
+  font-size: 55px;
+  width: 80px;
+  height: 80px;
+  color:#0d1c48;	;
+}
+.aside-icon a:hover{
+  color:#eb9845;
+}
+.btntranslate {
+  position: relative;
+}
+
+  .btntranslate::after{
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 100px;
+  background-color: rgb(215, 240, 248);
+  top: 40px;
+  left: 70px;
+  border-radius: 0px 15px 15px;
+  display: none;
+  }
+
+  .btntranslate:active::after{
+    content: "Copied";
+      color: #022535;
+      display: block;
+  } 
