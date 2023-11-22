@@ -62,7 +62,7 @@ transform: skewX(12deg);
 background-color: rgba(0, 31, 91, 0.4);
 margin-left:-20.5%;
 visibility: hidden;
-transition: width .5s ease;
+transition: all .5s ease;
 }
 
 .card:hover .overlay{
